@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'simple_calendar', '~> 2.3'
 gem 'icalendar', '~> 2.6', '>= 2.6.1'
+gem 'simple_form'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
