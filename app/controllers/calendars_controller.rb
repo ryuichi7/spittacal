@@ -2,11 +2,11 @@ require 'icalendar'
 
 class CalendarsController < ApplicationController
   def new
-    @calendar = Calendar.new
+    @calendar = Icalendar::Calendar.new
   end
 
   def create
-    @calendar = Calendar.new(calendar_params)
+    @calendar = Icalendar::Calendar.new(calendar_params)
     if @calendar.save
       redirect_to calendar_path(@calendar)
     else
