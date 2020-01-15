@@ -1,6 +1,6 @@
 require 'icalendar'
 
-module Gem
+module Icalendar
   def new
     Icalendar::Calendar.new
   end
@@ -10,5 +10,5 @@ class Calendar < ApplicationRecord
   has_many :bookings
   belongs_to :resource
 
-  include Gem
+  include Icalendar
 end

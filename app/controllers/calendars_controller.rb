@@ -1,4 +1,6 @@
-class CalendarController < ApplicationController
+require 'icalendar'
+
+class CalendarsController < ApplicationController
   def new
     @calendar = Calendar.new
   end
