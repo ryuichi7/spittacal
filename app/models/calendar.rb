@@ -1,8 +1,12 @@
 require 'icalendar'
 
-module Icalendar
-  class Calendar < ApplicationRecord
-    has_many :bookings
-    belongs_to :resource
-  end
+# module Icalendar
+#   Icalendar::Calendar.new
+# end
+
+class Calendar < ApplicationRecord
+  has_many :bookings
+  belongs_to :resource
+
+  # include Icalendar
 end
